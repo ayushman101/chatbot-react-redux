@@ -1,7 +1,7 @@
 import React from 'react';
 import {createClientMessage} from 'react-chatbot-kit'
 import { useNavigate } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux'; 
+import { useDispatch } from 'react-redux'; 
 import {
   setSelectedDate,
   setSelectedTimeSlot,
@@ -13,7 +13,7 @@ import {
 
 const ActionProvider=({createChatBotMessage, setState,children})=>{
 	
-	  let navigate = useNavigate();
+	let navigate = useNavigate();
   	const dispatch = useDispatch();
 
 	const handleGotIt =()=>{
@@ -111,6 +111,12 @@ const ActionProvider=({createChatBotMessage, setState,children})=>{
           actions: {
 		handleGotIt,
 		showCalenderOptions,
+		selectAge,
+		handleAge,
+		selectTimeSlotHandler,
+		selectTimeSlot,
+		handleName,
+		selectDateHandler,
 	  },
         });
       })}

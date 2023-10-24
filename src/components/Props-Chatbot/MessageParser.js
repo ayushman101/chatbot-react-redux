@@ -3,9 +3,10 @@ import React from 'react';
 const MessageParser= ({actions,state,children})=>{
 	const parse= (message)=>{
 		if(message.includes('hello')){
-			actions.handleGotIt();
-			console.log(message);
+			actions.greet();
 		}
+		else
+			actions.handleName(message);
 	}
 
 	return (
