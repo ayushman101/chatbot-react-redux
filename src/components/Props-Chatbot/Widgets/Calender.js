@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import './calender.css'
 
-const Calendar = (props) => {
+const Calender = (props) => {
   const [startDate, setStartDate] = useState(new Date());
   const [selectedDate, setSelectedDate] = useState(null);
 
@@ -30,7 +31,7 @@ const Calendar = (props) => {
 
   return (
     <div className="options-container">
-      <button onClick={handlePrevClick} className="option-button">{"<"}</button>
+      <button onClick={handlePrevClick} className="option-btn">{"<"}</button>
       {dates.map((date, index) => (
         <button
           key={index}
@@ -40,9 +41,9 @@ const Calendar = (props) => {
           {date.toLocaleDateString('en-US', { day: '2-digit', month: 'short' })}
         </button>
       ))}
-      <button onClick={handleNextClick} className="option-button">{">"}</button>
+      <button onClick={handleNextClick} className="option-btn">{">"}</button>
     </div>
   );
 };
 
-export default Calendar;
+export default Calender;

@@ -12,7 +12,7 @@ const AgeSelection= (props)=>{
 	<div className="options-container">
 		<select onChange={handleChange} className="option-btn">
 		{
-			age.Options.map((age,index)=>(
+			ageOptions.map((age,index)=>(
 				<option key={index} value={age}>
 					{age}
 				</option>

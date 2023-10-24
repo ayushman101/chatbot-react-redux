@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import './Options.css'
 
 
 const Options=(props)=>{
@@ -9,8 +10,8 @@ const Options=(props)=>{
 		{
 			text:"Got it",
 			handler: ()=>{
-				console.log(props.actionProvider.HandleGotIt())
-				props.actionProvider.HandleGotIt()
+				console.log(props.actionProvider)
+				props.actionProvider.handleGotIt()
 				setVisible(false);
 			},
 
@@ -32,7 +33,7 @@ const Options=(props)=>{
 			)
 	);
 
-	return <div className="options-container">{buttons}</div>
+	return <div className="options-container">{buttons}</div>;
 }
 
 export default Options;

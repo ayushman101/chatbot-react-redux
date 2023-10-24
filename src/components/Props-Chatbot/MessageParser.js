@@ -3,7 +3,7 @@ import React from 'react';
 const MessageParser= ({actions,state,children})=>{
 	const parse= (message)=>{
 		if(message.includes('hello')){
-			actions.HandleGotIt();
+			actions.handleGotIt();
 			console.log(message);
 		}
 	}
@@ -13,7 +13,7 @@ const MessageParser= ({actions,state,children})=>{
       	{React.Children.map(children, (child) => {
         	return React.cloneElement(child, {
           	parse: parse,
-          	actions: {},
+          	actions,
         	});
       	})}
     	</div>
