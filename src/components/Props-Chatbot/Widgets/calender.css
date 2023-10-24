@@ -15,6 +15,13 @@
   cursor: pointer;
 }
 
+.option-button{
+	border-color: purple;
+	margin: 2px 1px;	
+	border-radius: 9px;
+  	color: black;	
+}
+
 .option-button:hover {
   background-color: #069af6;
 }

@@ -8,7 +8,7 @@ import 'react-chatbot-kit/build/main.css'
 const Chat=()=>{
 	return (
 		<div className="App">
-		<div style={{maxwidth: "300px"}}>
+		<div className="chatbot-container">
 			<Chatbot config={config}
 				actionProvider={ActionProvider}
 				messageParser={MessageParser}
