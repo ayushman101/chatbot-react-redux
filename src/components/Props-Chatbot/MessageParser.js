@@ -1,11 +1,23 @@
 import React from 'react';
 
-const MessageParser= ({actionProvider,state})=>{
+const MessageParser= ({actions,state,children})=>{
 	const parse= (message)=>{
-		if(message.includes('Got it!')){
-			actionProvider.HandleGotIt();
+		if(message.includes('hello')){
+			actions.HandleGotIt();
+			console.log(message);
 		}
 	}
+
+	return (
+    	<div>
+      	{React.Children.map(children, (child) => {
+        	return React.cloneElement(child, {
+          	parse: parse,
+          	actions: {},
+        	});
+      	})}
+    	</div>
+	);
 }
 
 export default MessageParser
