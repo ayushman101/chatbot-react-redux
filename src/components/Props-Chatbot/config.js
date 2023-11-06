@@ -8,16 +8,16 @@ import TimeSlots from './Widgets/TimeSlots'
 import AgeSelection from './Widgets/AgeSelector'
 
 const config= {
-	botName: "HappilyEverBot",
+	botName: "Ratham Bot",
 	initialMessages: [
-		createChatBotMessage("Hello, Welcome to HappilyEver Help chat",{
+		createChatBotMessage("Hello, Welcome to Ratham Help chat",{
 			widget: "options",
 		}),
 		
 	],
 	
 	customComponents: {
-		header: () => <div style={{fontWeight: "bolder", color: "darkblue", fontFamily: " American TypeWriter, serif", padding: "5px", borderRadius: "3px" }}>HappilyEver</div>,
+		header: () => <div style={{fontWeight: "bolder", color: "darkblue", fontFamily: " American TypeWriter, serif", padding: "5px", borderRadius: "3px" }}>Ratham</div>,
 		
 	},
 

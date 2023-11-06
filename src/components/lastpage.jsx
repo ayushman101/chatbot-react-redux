@@ -7,7 +7,7 @@ const LastPage = () => {
 
   return (
     <div className='lastPage'>
-      <h1 className='lastH1'>Your name {userName} age {userAge} has been added to the HappilyEver Student Info System. You may exit now.</h1>
+      <h1 className='lastH1'>Your name {userName} age {userAge} has been added to the Ratham Student Info System. You may exit now.</h1>
     </div>
   );
 };
